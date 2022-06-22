@@ -2,7 +2,7 @@ package mockdb
 
 import (
 	"github.com/go-pg/pg/orm"
-	"github.com/resonatecoop/user-api-template/model"
+	"github.com/litesolutions/justifay-api/model"
 )
 
 // User database mock

@@ -1,4 +1,4 @@
-module github.com/resonatecoop/user-api-template
+module github.com/litesolutions/justifay-api
 
 go 1.18
 

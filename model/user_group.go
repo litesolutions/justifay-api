@@ -10,7 +10,7 @@ import (
 	// trackpb "user-api/rpc/track"
 	//tagpb "github.com/resonatecoop/user-api/proto/api"
 
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 
 	uuid "github.com/google/uuid"
 )

@@ -3,10 +3,10 @@ package server_test
 import (
 	"fmt"
 
-	"github.com/resonatecoop/user-api-template/model"
+	"github.com/litesolutions/justifay-api/model"
 
 	_ "github.com/jackc/pgx/v4/stdlib"
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 	"github.com/stretchr/testify/assert"
 )
 

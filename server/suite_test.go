@@ -10,9 +10,9 @@ import (
 
 	//"github.com/resonatecoop/id/log"
 	// "github.com/resonatecoop/id/log"
-	"github.com/resonatecoop/user-api-template/model"
-	"github.com/resonatecoop/user-api-template/pkg/config"
-	"github.com/resonatecoop/user-api-template/server"
+	"github.com/litesolutions/justifay-api/model"
+	"github.com/litesolutions/justifay-api/pkg/config"
+	"github.com/litesolutions/justifay-api/server"
 	"github.com/stretchr/testify/suite"
 	"github.com/uptrace/bun"
 	"github.com/uptrace/bun/dialect/pgdialect"
