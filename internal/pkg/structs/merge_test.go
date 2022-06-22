@@ -3,7 +3,7 @@ package structs_test
 import (
 	"testing"
 
-	"github.com/resonatecoop/user-api-template/internal/pkg/structs"
+	"github.com/litesolutions/justifay-api/internal/pkg/structs"
 	"github.com/stretchr/testify/assert"
 )
 

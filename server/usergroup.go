@@ -12,8 +12,8 @@ import (
 	"github.com/goware/urlx"
 	"github.com/uptrace/bun"
 
-	"github.com/resonatecoop/user-api-template/model"
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	"github.com/litesolutions/justifay-api/model"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 )
 
 // // Server implements the UserService

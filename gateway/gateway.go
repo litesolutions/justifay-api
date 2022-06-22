@@ -16,11 +16,11 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
 
-	"github.com/resonatecoop/user-api-template/insecure"
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	"github.com/litesolutions/justifay-api/insecure"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 
 	// Static files
-	_ "github.com/resonatecoop/user-api-template/statik"
+	_ "github.com/litesolutions/justifay-api/statik"
 )
 
 // getOpenAPIHandler serves an OpenAPI UI.

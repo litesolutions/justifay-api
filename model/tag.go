@@ -7,7 +7,7 @@ import (
 
 	uuid "github.com/google/uuid"
 
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 )
 
 // Tag provides basic tag structure

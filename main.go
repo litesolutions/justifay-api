@@ -13,21 +13,21 @@ import (
 	"google.golang.org/grpc/credentials"
 	grpclog "google.golang.org/grpc/grpclog"
 
-	"github.com/resonatecoop/user-api-template/app"
-	"github.com/resonatecoop/user-api-template/migrations"
-	"github.com/resonatecoop/user-api-template/model"
-	acc "github.com/resonatecoop/user-api-template/pkg/access"
+	"github.com/litesolutions/justifay-api/app"
+	"github.com/litesolutions/justifay-api/migrations"
+	"github.com/litesolutions/justifay-api/model"
+	acc "github.com/litesolutions/justifay-api/pkg/access"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/resonatecoop/user-api-template/gateway"
-	"github.com/resonatecoop/user-api-template/insecure"
-	pbUser "github.com/resonatecoop/user-api-template/proto/user"
+	"github.com/litesolutions/justifay-api/gateway"
+	"github.com/litesolutions/justifay-api/insecure"
+	pbUser "github.com/litesolutions/justifay-api/proto/user"
 
-	authorization "github.com/resonatecoop/user-api-template/authorization"
-	userserver "github.com/resonatecoop/user-api-template/server"
+	authorization "github.com/litesolutions/justifay-api/authorization"
+	userserver "github.com/litesolutions/justifay-api/server"
 
 	// Static files
-	_ "github.com/resonatecoop/user-api-template/statik"
+	_ "github.com/litesolutions/justifay-api/statik"
 
 	cli "github.com/urfave/cli/v2"
 )

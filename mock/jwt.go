@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/resonatecoop/user-api-template/model"
+	"github.com/litesolutions/justifay-api/model"
 )
 
 // JWT mock

@@ -3,7 +3,7 @@ package query
 import (
 	"fmt"
 
-	"github.com/resonatecoop/user-api-template/model"
+	"github.com/litesolutions/justifay-api/model"
 )
 
 // ForTenant returns query for filtering rows by tenant_id
