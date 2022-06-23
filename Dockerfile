@@ -11,9 +11,9 @@ WORKDIR /build
 RUN export GO111MODULE=on
 RUN apt-get -y update
 RUN apt-get install -y libpq-dev postgresql-client
-RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/resonatecoop/user-api
+RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/litesolutions/justifay-api
 
-WORKDIR /build/user-api
+WORKDIR /build/justifay-api
 
 RUN make install
 RUN git submodule update --init

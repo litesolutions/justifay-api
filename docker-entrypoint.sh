@@ -1,2 +1,2 @@
-./user-api db -env prod migrate
-./user-api runserver -env prod -dbdebug true
+./justifay-api db -env prod migrate
+./justifay-api runserver -env prod -dbdebug true
