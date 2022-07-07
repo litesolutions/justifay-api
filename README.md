@@ -1,23 +1,5 @@
 # Justifay API
 
-This is a significant evolution of @blushi's [original Golang-based user-api](https://github.com/resonatecoop/user-api-old)
-
-The changes are so significant a new repo was created, but a lot of code lives on from that repo.
-
-It builds on that work in several important ways:
-
-- drops Twirp framework in favour of [GRPC-Gateway](https://grpc-ecosystem.github.io/grpc-gateway/) which has gained significant traction
-- implements full OpenAPIV2 workflow - write interfaces in protobufs and generate the code stubs, then implement them.
-- exposes full Swagger UI automatically
-- implements full RBAC using native Golang Interceptors (arguably better than using Twirp Handlers)
-- RBAC is based on User role and interface access config in the config file
-- built with Go modules for dependency management
-- adds a CLI for database management and for running the server
-- replaces `go-pg` with `bun`
-- merges in the models from `litesolutions\justifay-id`
-
-It is WIP, do NOT use this in Production yet!
-
 ## Running
 
 Running `go run main.go runserver` starts a web server on https://0.0.0.0:11000/. You can configure
