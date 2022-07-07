@@ -1,4 +1,4 @@
-# user-api
+# Justifay API
 
 This is a significant evolution of @blushi's [original Golang-based user-api](https://github.com/resonatecoop/user-api-old)
 
@@ -14,7 +14,7 @@ It builds on that work in several important ways:
 - built with Go modules for dependency management
 - adds a CLI for database management and for running the server
 - replaces `go-pg` with `bun`
-- merges in the models from `resonatecoop\id`
+- merges in the models from `litesolutions\justifay-id`
 
 It is WIP, do NOT use this in Production yet!
 
@@ -61,11 +61,11 @@ pg_ctl -D /usr/local/var/postgres -l logfile start
 
 * Create user and database as follows (as found in the local config file in `./conf.local.yaml`):
 
-username = "resonate_dev_user"
+username = "justifay_dev_user"
 
 password = "password"
 
-dbname = "resonate_dev"
+dbname = "justifay_dev"
 
 To get into the Postgres shell, run:
 ```
@@ -73,14 +73,14 @@ psql
 ```
 
 ```sql
-CREATE DATABASE resonate_dev;
-CREATE USER resonate_dev_user WITH PASSWORD 'password';
-GRANT ALL PRIVILEGES ON DATABASE resonate_dev TO resonate_dev_user;
+CREATE DATABASE justifay_dev;
+CREATE USER justifay_dev_user WITH PASSWORD 'password';
+GRANT ALL PRIVILEGES ON DATABASE justifay_dev TO justifay_dev_user;
 ```
 
 * And add the `hstore` and `uuid-ossp` extensions, confirming with the `SELECT` statement.
 ```sql
-\c resonate_dev;
+\c justifay_dev;
 CREATE EXTENSION hstore;
 CREATE EXTENSION "uuid-ossp";
 SELECT * FROM pg_extension;
@@ -107,7 +107,7 @@ UACERT_DIR="/usr/local/etc/nginx/ssl" go run main.go db -env dev rollback
 Ongoing WIP atm, but for example, can be run with:
 
 ```sh
-$  go test -timeout 30s -run ^TestDeleteUser$ github.com/resonatecoop/user-api/server/users
+$  go test -timeout 30s -run ^TestDeleteUser$ github.com/litesolutions/justifay-api/server/users
 ```
 
 ## Running!
@@ -134,11 +134,11 @@ The PSN connection strings for dev and test are in conf.local.yaml, but for prod
 
 ## Docker!
 
-Build a container with `docker build -t resonateuserapi .`
+Build a container with `docker build -t userapi .`
 
 (to avoid cache, use `--no-cache` option)
 
-Run container with `docker run -p 11000:11000 --network=host -tid resonateuserapi`
+Run container with `docker run -p 11000:11000 --network=host -tid userapi`
 
 Check status with `docker container ls` and `docker logs <image>`
 
